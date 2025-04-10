@@ -24,7 +24,6 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->withFacades();
-
 $app->withEloquent();
 
 /*
@@ -71,6 +70,9 @@ $app->configure('app');
 | route or middleware that'll be assigned to some specific routes.
 |
 */
+$app->middleware([
+    App\Http\Middleware\AuthenticateAccess::class
+    ]);
 
 // $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
@@ -79,6 +81,7 @@ $app->configure('app');
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
+
 
 /*
 |--------------------------------------------------------------------------
