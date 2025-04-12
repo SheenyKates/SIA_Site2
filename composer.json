@@ -10,9 +10,7 @@
         "flipbox/lumen-generator": "^9.3",
         "illuminate/auth": "^10.48",
         "laravel/lumen-framework": "^10.0",
-        "ext-mysqli": "*",
-        "laravel/tinker": "^2.10",
-        "tymon/jwt-auth": "^2.2"
+        "ext-mysqli": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
